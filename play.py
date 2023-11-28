@@ -13,12 +13,14 @@ def play(word):
     guessed_letters = []
     guessed_words = []
     tries = 6
-    print("Let's play!")
+    print("Welcome! Here you can play hangman, with one clue. The word is always an emotion.")
+    print("The rules are simple. Pick a letter or word until you guessed the right word. You must do it before the man get's hanged.")
+    print("Lets play!")
     print(display_hangman(tries))
     print(word_completion)
     print("\n")
     while not guessed and tries > 0:
-        guess = input("Please guess a letter or word: ").upper()
+        guess = input("Guess a letter or word: ").upper()
         if len(guess) == 1 and guess.isalpha():
             if guess in guessed_letters:
                 print("You already guessed the letter", guess)
@@ -27,7 +29,7 @@ def play(word):
                 tries -= 1
                 guessed_letters.append(guess)
             else:
-                print("Good job,", guess, "is in the word!")
+                print("Woho,", guess, "is in the word!")
                 guessed_letters.append(guess)
                 word_as_list = list(word_completion)
                 indices = [i for i, letter in enumerate(word) if letter == guess]
@@ -52,9 +54,9 @@ def play(word):
         print(word_completion)
         print("\n")
     if guessed:
-        print("Congrats, you guessed the word! You win!")
+        print(WOHO! You guessed the right word! Congratulations!")
     else:
-        print("Sorry, you ran out of tries. The word was " + word + ". Maybe next time!")
+        print("BUHU. No more tries. The word was " + word + ".")
 
 
 def display_hangman(tries):
