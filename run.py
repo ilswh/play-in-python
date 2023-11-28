@@ -1,9 +1,11 @@
 import random
 
-print("Welcome to hangman")
+print("Welcome to the site where you can improve vocabulary and keep your brain active. Let's play!")
 print("-------------------------------------------")
 
-wordDictionary = ["sunflower", "house", "diamond", "memes","yeet","hello", "howdy", "like", "subscribe"]
+### Categories: emotions, .., ..
+wordDictionary = ["happiness", "anger", "shame", "embaressment", "frustration", "fear", "surprise", "sadness",
+"disgust", "shame", "disappointment", "contentment", "embarrassment", "pride", "resentment"]
 
 ### Choose a random word
 randomWord = random.choice(wordDictionary)
@@ -92,7 +94,7 @@ while(amount_of_times_wrong != 6 and current_letters_right != length_of_word_to_
     current_letters_guessed.append(letterGuessed)
     current_letters_right = printWord(current_letters_guessed)
     printLines()
-  ### User was wrong af
+  ### User was wrong
   else:
     amount_of_times_wrong+=1
     current_letters_guessed.append(letterGuessed)
