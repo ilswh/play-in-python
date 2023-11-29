@@ -136,7 +136,7 @@ def display_hangman(tries):
     ]
     return stages[tries]
 
-# puts everything together
+# sews everything together
 def main():
     # runs the game once
     word = get_word()
