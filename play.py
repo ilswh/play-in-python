@@ -1,12 +1,15 @@
+# imports a random word
 import random
+# imports words from words.py
 from words import word_list
 
-
+# gets a word for the game
 def get_word():
     word = random.choice(word_list)
     return word.upper()
 
-
+# for the actual interactive game
+# display the word
 def play(word):
     word_completion = "_" * len(word)
     guessed = False
@@ -18,7 +21,7 @@ def play(word):
     print("Lets play!")
     print(display_hangman(tries))
     print(word_completion)
-    print("\n")
+    print("\n") 
     while not guessed and tries > 0:
         guess = input("Guess a letter or word: ").upper()
         if len(guess) == 1 and guess.isalpha():
@@ -58,7 +61,7 @@ def play(word):
     else:
         print("BUHU. No more tries. The word was " + word + ".")
 
-
+# visual stages of the game, the index of each stage corresponds to number of tries the user has left. used to dispay current stage of game.
 def display_hangman(tries):
     stages = [  # final state: head, torso, both arms, and both legs
                 """
@@ -133,10 +136,12 @@ def display_hangman(tries):
     ]
     return stages[tries]
 
-
+# puts everything together
 def main():
+    # runs the game once
     word = get_word()
     play(word)
+    # creates the option to play again as long as the user chooses yes to play again
     while input("Play Again? (Y/N) ").upper() == "Y":
         word = get_word()
         play(word)
