@@ -23,16 +23,17 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 
 | File | CI URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-|play.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ilswh/play-in-python/main/run.py) | ![screenshot](documentation/py-validation-run.png) | W291 trailing whitespace |
-| stages.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ilswh/play-in-python/main/checkout/urls.py) | ![screenshot](documentation/py-validation-checkout-urls.png) | W292 no newline at end of file |
+|play.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ilswh/play-in-python/main/play.py) | ![screenshot](documentation/py-validation-play.png) | W291 trailing whitespace |
+| stages.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ilswh/play-in-python/main/checkout/stages.py) | ![screenshot](documentation/py-validation-checkout-urls.png) | W292 no newline at end of file |
+| words.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ilswh/play-in-python/main/checkout/words.py) | ![screenshot](documentation/py-validation-checkout-words.png) | W292 no newline at end of file |
 
 ## Browser Compatibility
+
+I've tested my deployed project on multiple browsers to check for compatibility issues.
 
 - [Chrome](https://www.google.com/chrome)
 - [Firefox (Developer Edition)](https://www.mozilla.org/firefox/developer)
 - [Safari](https://support.apple.com/downloads/safari)
-
-I've tested my deployed project on multiple browsers to check for compatibility issues.
 
 | Browser | Welcome | Play | Play again | Notes |
 | --- | --- | --- | --- | --- |
