@@ -1,10 +1,12 @@
 # imports a random word
 import random
 import os
-# imports words from words.py
-from words import word_list
-# from stages import display_hangman
+from countries import country_list
+from emotions import emotions_list
 from stages import display_hangman
+
+
+global category
 
 
 def clear():
@@ -15,9 +17,27 @@ def clear():
 
 
 # gets a word for the game
-def get_word():
-    word = random.choice(word_list)
+def get_word(category):
+    if category == "countries":
+        selected_list = country_list
+    if category == "emotions":
+        selected_list = emotions_list
+
+    # get a random word from the selected list
+    word = random.choice(selected_list)
     return word.upper()
+
+
+def welcome():
+    """
+    Welcome text to the user before the game starts.
+    """
+    print("Welcome! Here you can play hangman, with one clue.")
+    print("The word is always an emotion.")
+    print("The rules are simple.")
+    print("Pick a letter or word until you guessed the right word.")
+    print("You must do it before the man get's hanged.")
+    print("Lets play!")
 
 
 # for the actual interactive game
@@ -28,15 +48,9 @@ def play(word):
     guessed_letters = []
     guessed_words = []
     tries = 6
-    print("Welcome! Here you can play hangman, with one clue.")
-    print("The word is always an emotion.")
-    print("The rules are simple.")
-    print("Pick a letter or word until you guessed the right word.")
-    print("You must do it before the man get's hanged.")
-    print("Lets play!")
     print(display_hangman(tries))
     print(word_completion)
-    print("\n") 
+    print("\n")
     while not guessed and tries > 0:
         guess = input("Guess a letter or word: ").upper()
         clear()
@@ -51,7 +65,8 @@ def play(word):
                 print("Woohoo,", guess, "is in the word!")
                 guessed_letters.append(guess)
                 word_as_list = list(word_completion)
-                indices = [i for i, letter in enumerate(word) if letter == guess]
+                indices = [
+                    i for i, letter in enumerate(word) if letter == guess]
                 for index in indices:
                     word_as_list[index] = guess
                 word_completion = "".join(word_as_list)
@@ -68,28 +83,68 @@ def play(word):
                 guessed = True
                 word_completion = word
         else:
-            print("Not a valid guess.")
+            print(f"{guess} is not a valid guess.")
         print(display_hangman(tries))
         print(word_completion)
         print("\n")
     clear()
     if guessed:
-        print("WOOHOO! You guessed the right word! Congratulations!")
+        print(f"WOOHOO! You guessed the right word, {word}! Congratulations!")
     else:
         print("BUHU. No more tries. The word was " + word + ".")
 
 
+def choose_category():
+    """
+    Gives the player an option to select a category.
+    """
+    global category
+    while True:
+        print("\nSelect a category:")
+        user_choice = input("1. Countries\n2. Emotions\n3. Colors\n> ")
+        clear()
+        if user_choice == "1":
+            category = "countries"
+            print("You've selected Countries")
+            break
+        elif user_choice == "2":
+            category = "emotions"
+            print("You've selected Emotions")
+            break
+        elif user_choice == "3":
+            category = "color":
+            print("You've selected Colors.")
+            break
+        else:
+            print(f"{user_choice} is invalid. Try again.")
+
+    return category
+
+
 # sews everything together
 def main():
-    # runs the game once
-    word = get_word()
+    """
+    Runs the game, and repeats once completed
+    """
+    global category
+
+    # have the user select a category first
+    category = choose_category()
+
+    # pick a random word from selected category
+    word = get_word(category)
+
+    # play the game with the new word
     play(word)
-    # creates the option to play again as long as the user chooses yes to play again
+
+    # creates the option to play again as long as
+    # the user chooses yes to play again
     while True:
         again = input("Play Again? (Y/N) ").upper()
         clear()
         if again == "Y":
-            word = get_word()
+            category = choose_category()
+            word = get_word(category)
             play(word)
         elif again == "N":
             print("Thanks for playing hangman!")
@@ -101,4 +156,6 @@ def main():
 # run the main python application (play.py)
 if __name__ == "__main__":
     clear()
+    welcome()
     main()
+    choose_category()
