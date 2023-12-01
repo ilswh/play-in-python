@@ -24,8 +24,6 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 | File | CI URL | Screenshot | Notes |
 | --- | --- | --- | --- |
 |play.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ilswh/play-in-python/main/run.py) | ![screenshot](documentation/py-validation-run.png) | W291 trailing whitespace |
-| stages.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ilswh/play-in-python/main/boutique-ado/settings.py) | ![screenshot](documentation/py-validation-settings.png) | E501 line too long |
-| lives.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ilswh/play-in-python/main/blog/views.py) | ![screenshot](documentation/py-validation-blog-views.png) | Pass: No Errors |
 | stages.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ilswh/play-in-python/main/checkout/urls.py) | ![screenshot](documentation/py-validation-checkout-urls.png) | W292 no newline at end of file |
 
 ## Browser Compatibility
@@ -36,11 +34,11 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 
 I've tested my deployed project on multiple browsers to check for compatibility issues.
 
-| Browser | Home | About | Contact | etc | Notes |
-| --- | --- | --- | --- | --- | --- |
-| Chrome | ![screenshot](documentation/browser-chrome-home.png) | ![screenshot](documentation/browser-chrome-about.png) | ![screenshot](documentation/browser-chrome-contact.png) | ![screenshot](documentation/browser-chrome-etc.png) | Works as expected |
-| Firefox | ![screenshot](documentation/browser-firefox-home.png) | ![screenshot](documentation/browser-firefox-about.png) | ![screenshot](documentation/browser-firefox-contact.png) | ![screenshot](documentation/browser-firefox-etc.png) | Works as expected |
-| Safari | ![screenshot](documentation/browser-safari-home.png) | ![screenshot](documentation/browser-safari-about.png) | ![screenshot](documentation/browser-safari-contact.png) | ![screenshot](documentation/browser-safari-etc.png) | Minor CSS differences |
+| Browser | Welcome | Play | Play again | Notes |
+| --- | --- | --- | --- | --- |
+| Chrome | ![screenshot] () | ![screenshot]() | ![screenshot]() | Works as expected |
+| Firefox | ![screenshot] () | ![screenshot]() | ![screenshot]() | Works as expected |
+| Safari | ![screenshot] () | ![screenshot]() | ![screenshot]() | Works as expected |
 
 ## Responsiveness
 
@@ -50,11 +48,11 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 
 I've tested my deployed project on multiple devices to check for responsiveness issues.
 
-| Device | Welcome | Rules | Play | etc | Notes |
+| Device | Welcome | Play | Play again | Notes |
 | --- | --- | --- | --- | --- | --- |
-| Mobile (DevTools) | ![screenshot](documentation/responsive-mobile-home.png) | ![screenshot](documentation/responsive-mobile-about.png) | ![screenshot](documentation/responsive-mobile-contact.png) | ![screenshot](documentation/responsive-mobile-etc.png) | Works as expected |
-| Tablet (DevTools) | ![screenshot](documentation/responsive-tablet-home.png) | ![screenshot](documentation/responsive-tablet-about.png) | ![screenshot](documentation/responsive-tablet-contact.png) | ![screenshot](documentation/responsive-tablet-etc.png) | Works as expected |
-| Desktop | ![screenshot](documentation/responsive-desktop-home.png) | ![screenshot](documentation/responsive-desktop-about.png) | ![screenshot](documentation/responsive-desktop-contact.png) | ![screenshot](documentation/responsive-desktop-etc.png) | Works as expected |
+| Mobile (DevTools) | ![screenshot] () | ![screenshot]() | ![screenshot]() | Works as expected |
+| Tablet (DevTools) | ![screenshot] () | ![screenshot]() | ![screenshot]() | Works as expected |
+| Desktop | ![screenshot] () | ![screenshot]() | ![screenshot]() | Works as expected |
 
 ## Lighthouse Audit
 
@@ -67,10 +65,9 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 
 | Page | Mobile | Desktop | Notes |
 | --- | --- | --- | --- |
-| Welcome | ![screenshot](documentation/lighthouse-home-mobile.png) | ![screenshot](documentation/lighthouse-home-desktop.png) | Some minor warnings |
-| Rules | ![screenshot](documentation/lighthouse-about-mobile.png) | ![screenshot](documentation/lighthouse-about-desktop.png) | Some minor warnings |
-| Play | ![screenshot](documentation/lighthouse-gallery-mobile.png) | ![screenshot](documentation/lighthouse-gallery-desktop.png) | Slow response time due to large images |
-| x | x | x | repeat for any other tested pages/sizes |
+| Welcome | ![screenshot] () | ![screenshot]() | ![screenshot]() | Works as expected |
+| Play | ![screenshot] () | ![screenshot]() | ![screenshot]() | Works as expected |
+| Play again | ![screenshot] () | ![screenshot]() | ![screenshot]() | Works as expected |
 
 ## Defensive Programming
 
@@ -81,7 +78,6 @@ PP3 (Python-only):
 You should include any manual tests performed, and the expected results/outcome.
 Each test case should be specific, objective, and step-wise replicable.
 
-
 When in doubt, use the above method instead, and delete the table below.
 
 
@@ -91,6 +87,9 @@ When in doubt, use the above method instead, and delete the table below.
 | | Click on Logo | Redirection to Home page | Pass | |
 | | Click on Home link in navbar | Redirection to Home page | Pass | |
 | Game | | | | |
+| | Click on Gallery link in navbar | Redirection to Gallery page | Pass | |
+| | Load gallery images | All images load as expected | Pass | |
+| PLay again | | | | |
 | | Click on Gallery link in navbar | Redirection to Gallery page | Pass | |
 | | Load gallery images | All images load as expected | Pass | |
 
