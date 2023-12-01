@@ -78,21 +78,14 @@ PP3 (Python-only):
 You should include any manual tests performed, and the expected results/outcome.
 Each test case should be specific, objective, and step-wise replicable.
 
-When in doubt, use the above method instead, and delete the table below.
-
-
 | Page | User Action | Expected Result | Pass/Fail | Comments |
 | --- | --- | --- | --- | --- |
 | Welcome | | | | |
 | | Click on Logo | Redirection to Home page | Pass | |
-| | Click on Home link in navbar | Redirection to Home page | Pass | |
 | Game | | | | |
 | | Click on Gallery link in navbar | Redirection to Gallery page | Pass | |
-| | Load gallery images | All images load as expected | Pass | |
-| PLay again | | | | |
+| Play again | | | | |
 | | Click on Gallery link in navbar | Redirection to Gallery page | Pass | |
-| | Load gallery images | All images load as expected | Pass | |
-
 
 ## Bugs
 

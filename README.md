@@ -34,23 +34,18 @@ For some/all of your features, you may choose to reference the specific project 
 
 ![screenshot](documentation/feature01.png)
 
-- **Rules**
+- **Game**
 
     - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
 ![screenshot](documentation/feature02.png)
 
-- **Play**
+- **Play again**
 
     - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
 ![screenshot](documentation/feature03.png)
 
-- **Game**
-
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
-
-![screenshot](documentation/feature03.png)
 
 ### Future Features
 
@@ -230,11 +225,6 @@ however, it is important to be very specific about these sources to avoid plagia
 | [YouTube](https://www.youtube.com/watch?v=u51Zjlnui4Y) | PP3 terminal | tutorial for adding color to the Python terminal |
 | [strftime](https://strftime.org) | CRUD functionality | helpful tool to format date/time from string |
 | [WhiteNoise](http://whitenoise.evans.io) | entire site | hosting static files on Heroku temporarily |
-
-### Media
-
-| Source | Location | Type | Notes |
-| --- | --- | --- | --- |
 
 
 ### Acknowledgements
