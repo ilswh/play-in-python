@@ -4,7 +4,7 @@ import os
 # imports words from words.py
 from words import word_list
 # from stages import display_hangman
-from lives import display_hangman
+from stages import display_hangman
 
 
 def clear():
