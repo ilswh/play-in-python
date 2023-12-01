@@ -1,5 +1,9 @@
-# visual stages of the game, the index of each stage corresponds to number of tries the user has left. used to dispay current stage of game.
 def display_hangman(tries):
+    """
+    visual stages of the game, the index of each stage corresponds
+    to number of tries the user has left.
+    used to dispay current stage of game.
+    """
     stages = [  # final state: head, torso, both arms, and both legs
                 """
                    --------
@@ -17,7 +21,7 @@ def display_hangman(tries):
                    |      O
                    |     \\|/
                    |      |
-                   |     / 
+                   |     /
                    -
                 """,
                 # head, torso, and both arms
@@ -27,7 +31,7 @@ def display_hangman(tries):
                    |      O
                    |     \\|/
                    |      |
-                   |      
+                   |
                    -
                 """,
                 # head, torso, and one arm
@@ -37,7 +41,7 @@ def display_hangman(tries):
                    |      O
                    |     \\|
                    |      |
-                   |     
+                   |
                    -
                 """,
                 # head and torso
@@ -47,7 +51,7 @@ def display_hangman(tries):
                    |      O
                    |      |
                    |      |
-                   |     
+                   |
                    -
                 """,
                 # head
@@ -55,19 +59,19 @@ def display_hangman(tries):
                    --------
                    |      |
                    |      O
-                   |    
-                   |      
-                   |     
+                   |
+                   |
+                   |
                    -
                 """,
                 # initial empty state
                 """
                    --------
                    |      |
-                   |      
-                   |    
-                   |      
-                   |     
+                   |
+                   |
+                   |
+                   |
                    -
                 """
     ]
