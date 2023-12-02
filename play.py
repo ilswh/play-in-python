@@ -1,8 +1,11 @@
 # imports a random word
 import random
+#imports operationg system
 import os
+# accesses words from diffrent categories
 from countries import country_list
 from emotions import emotions_list
+# accesses hangman-art
 from stages import display_hangman
 
 
@@ -16,8 +19,10 @@ def clear():
     os.system("cls" if os.name == "nt" else "clear")
 
 
-# gets a word for the game
 def get_word(category):
+    """ 
+    Gets a word for the game.
+    """
     if category == "countries":
         selected_list = country_list
     if category == "emotions":
@@ -30,7 +35,7 @@ def get_word(category):
 
 def welcome():
     """
-    Welcome text to the user before the game starts.
+    Welcome text for the user before the game starts.
     """
     print("Welcome! Here you can play hangman, with one clue.")
     print("The word is always an emotion.")
@@ -40,9 +45,11 @@ def welcome():
     print("Lets play!")
 
 
-# for the actual interactive game
-# display the word
+
 def play(word):
+    """
+    The actual interactive game.
+    """
     word_completion = "_" * len(word)
     guessed = False
     guessed_letters = []
@@ -121,10 +128,11 @@ def choose_category():
     return category
 
 
-# sews everything together
+
 def main():
     """
-    Runs the game, and repeats once completed
+    Sews everything together.
+    Runs the game, and repeats once completed.
     """
     global category
 
