@@ -1,19 +1,20 @@
 # [PLAY IN PYTHON](https://play-in-python-5451a263c67c.herokuapp.com)
 
-In this section, you will include a few paragraphs providing an overview of your project.
-Essentially, this part is your "sales pitch".
+Play in Python presents the option to play hangman with a theme. 
+The theme is emotions.
+My hope is that it will be a tool to explore and become more aware of emotions of others and self.
+My target audience is mainly human beings on the autism spectrum.
+It will be useful for these humans because it emotional understanding is usually not a granted knowledge for us. 
 
-In this section, describe what the project hopes to accomplish, who it is intended to target, and how it will be useful to the target audience.
-
-Consider adding a mockup image using the "Am I Responsive" website.
-Here's your deployed site as an example:
 https://ui.dev/amiresponsive?url=https://play-in-python-5451a263c67c.herokuapp.com
 
 ![screenshot](documentation/mockup.png)
 
 ## UX
 
-In this section, you will briefly explain your design processes.
+My design-process started with a discussion with my mentor when I asked for advice and he shared a few links, 
+after which I made a choice of creating a hangman-game which I enjoyed playing lågstadiet in school. 
+I later on decided that I wanted it to have a theme. Learning and understanding emotions, which is a tricky thing.
 
 ## Features
 
@@ -30,19 +31,19 @@ For some/all of your features, you may choose to reference the specific project 
 
 - **Welcome**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Firstly when entering the game is a short welcome text, followed by the basic rules of the game.
 
 ![screenshot](documentation/feature01.png)
 
 - **Game**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - When entering the game the option to choose a letter or word is presented. With this you can see the start of the pictured hangman.
 
 ![screenshot](documentation/feature02.png)
 
 - **Play again**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - After winning or loosing, the option to play again is presented.
 
 ![screenshot](documentation/feature03.png)
 
@@ -66,7 +67,7 @@ For some/all of your features, you may choose to reference the specific project 
 
 To follow best practice, a flowchart was created for the app's logic,
 and mapped out before coding began using a free version of
-[Lucidchart](https://www.lucidchart.com/pages/ER-diagram-symbols-and-meaning) and/or [Draw.io](https://www.draw.io).
+[Lucidchart](https://www.lucidchart.com/pages/ER-diagram-symbols-and-meaning).
 
 Below is the flowchart of the main process of this Python program. It shows the entire cycle of the program.
 
@@ -74,22 +75,20 @@ Below is the flowchart of the main process of this Python program. It shows the 
 
 ### Classes & Functions
 
-The program uses classes as a blueprint for the project's objects (OOP). This allows for the object to be reusable.
-
 The primary functions used on this application are:
 
-- `get_sales_data()`
-    - Get sales figures input from the user.
-- `validate_data()`
-    - Converts all string values into integers.
-- `update_worksheet()`
-    - Update the relevant worksheet with the data provided.
-- `calculate_surplus_data()`
-    - Compare sales with stock and calculate the surplus for each item type.
-- `get_last_5_entries_sales()`
-    - Collects columns of data from sales worksheet.
-- `calculate_stock_data()`
-    -  Calculate the average stock for each item type, adding 10%.
+- `def clear()`
+    - Clear function to clean-up the terminal so things don't get messy.
+- `def get_word()`
+    - Gets a word for the game.
+- `def welcome()`
+    - Welcome text for the user before the game starts.
+- `def play(word)`
+    - The actual interactive game. (Generates a word).
+- `def choose_category()`
+    - Gives the player an option to select a category.
+- `def main()`
+    -   Sews everything together, runs the game and repeats once completed.
 - `main()`
     - Run all program functions.
 
