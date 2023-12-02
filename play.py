@@ -120,7 +120,7 @@ def choose_category():
             print("You've selected Happy Emotions")
             break
         elif user_choice == "3":
-            category = "Sad Emotions":
+            category = "Sad Emotions"
             print("You've selected Sad Emotions.")
             break
         else:
