@@ -1,6 +1,6 @@
 # imports a random word
 import random
-#imports operationg system
+#imported for clear function
 import os
 # accesses words from diffrent categories
 from primary_emotions import primary_emotions_list
@@ -50,6 +50,7 @@ def welcome():
 def play(word):
     """
     The actual interactive game.
+    (Generates a word).
     """
     word_completion = "_" * len(word)
     guessed = False
