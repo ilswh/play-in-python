@@ -3,8 +3,9 @@ import random
 #imports operationg system
 import os
 # accesses words from diffrent categories
-from countries import country_list
-from emotions import emotions_list
+from primary_emotions import primary_emotions_list
+from happy_emotions import happy_emotions_list
+from sad_emotions import sad_emotions_list
 # accesses hangman-art
 from stages import display_hangman
 
@@ -108,19 +109,19 @@ def choose_category():
     global category
     while True:
         print("\nSelect a category:")
-        user_choice = input("1. Countries\n2. Emotions\n3. Colors\n> ")
+        user_choice = input("1. Primary Emotions\n2. Happy Emotions\n3. Sad Colors\n> ")
         clear()
         if user_choice == "1":
-            category = "countries"
-            print("You've selected Countries")
+            category = "primary emotions"
+            print("You've selected Primary Emotions")
             break
         elif user_choice == "2":
-            category = "emotions"
-            print("You've selected Emotions")
+            category = "happy emotions"
+            print("You've selected Happy Emotions")
             break
         elif user_choice == "3":
-            category = "color":
-            print("You've selected Colors.")
+            category = "Sad Emotions":
+            print("You've selected Sad Emotions.")
             break
         else:
             print(f"{user_choice} is invalid. Try again.")
