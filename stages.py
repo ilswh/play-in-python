@@ -1,6 +1,6 @@
 def display_hangman(tries):
     """
-    visual stages of the game, the index of each stage corresponds
+    Visual stages of the game, the index of each stage corresponds
     to number of tries the user has left.
     used to dispay current stage of game.
     """
