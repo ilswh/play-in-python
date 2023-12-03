@@ -8,16 +8,7 @@ with the project providing an easy and straightforward way for the users to achi
 
 ## Code Validation
 
-Use the space to discuss code validation for any of your own code files (where applicable).
-
 ### Python
-
-DO THIS:
-- As an API, using the "raw" URL appended to the linter URL.
-    - To find the "raw" URL, navigate to your file directly on the GitHub repo.
-    - On that page, GitHub provides a button on the right called "Raw" that you can click on.
-    - From that new page, copy the full URL, and paste it after the CI Python Linter URL (with a `/` separator).
-    - Check the example table below for a live demo.
 
 I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com) to validate all of my Python files.
 
@@ -59,11 +50,6 @@ I've tested my deployed project on the following devices to check for responsive
 
 ## Lighthouse Audit
 
-Use this space to discuss testing the live/deployed site's Lighthouse Audit reports.
-Avoid testing the local version (especially if developing in Gitpod), as this can have knock-on effects of performance.
-
-Sample Lighthouse testing documentation:
-
 I've tested my deployed project using the Lighthouse Audit tool to check for any major issues.
 
 | Page | Mobile | Desktop | Notes |
@@ -95,18 +81,24 @@ PP3 (Python-only):
 
 ## Bugs
 
-- Python `'ModuleNotFoundError'` when trying to import module from imported package
+- After adding new categories and typing them in global category, the game wouldn't open.
 
     ![screenshot](documentation/bug03.png)
 
-    - To fix this, I _____________________.
+    - To fix this, I removed the underline and added named it by category instead of filename.
 
 
-- Python `E501 line too long` (93 > 79 characters)
+- Line to long.
 
     ![screenshot](documentation/bug04.png)
 
-    - To fix this, I _____________________.
+    - To fix this, I cut line in to two lines.
+
+- Trailing whitespace.
+
+    ![screenshot](documentation/bug04.png)
+
+    - To fix this, I deleted whitespace.
 
 ## Unfixed Bugs
 
