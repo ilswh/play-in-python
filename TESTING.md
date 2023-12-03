@@ -22,7 +22,7 @@ DO THIS:
 I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com) to validate all of my Python files.
 
 | File | CI URL | Screenshot |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 |play.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ilswh/play-in-python/main/play.py) | ![screenshot](documentation/py-validation-play.png) |
 | stages.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ilswh/play-in-python/main/checkout/stages.py) | ![screenshot](documentation/py-validation-stages.png) |
 | primary_emotions.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ilswh/play-in-python/main/primary_emotions.py) | ![screenshot](documentation/py-validation-primary_emotions.png) |
@@ -31,11 +31,11 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 
 ## Browser Compatibility
 
-I've tested my deployed project on multiple browsers to check for compatibility issues.
+I've tested my deployed project on following browsers to check for compatibility issues.
 
 - [Chrome](https://www.google.com/chrome)
 - [Firefox (Developer Edition)](https://www.mozilla.org/firefox/developer)
-- [Safari](https://support.apple.com/downloads/safari)
+- [Opera](https://www.opera.com/download)
 
 | Browser | Welcome | Game | Play again | Notes |
 | --- | --- | --- | --- | --- |
@@ -45,17 +45,17 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 
 ## Responsiveness
 
+I've tested my deployed project on the following devices to check for responsiveness issues.
+
 - Mobile
 - Tablet
 - Desktop
 
-I've tested my deployed project on multiple devices to check for responsiveness issues.
-
-| Device | Welcome | Play | Play again | Notes |
-| --- | --- | --- | --- | --- | --- |
+| Device | Welcome | Game | Play again | Notes |
+| --- | --- | --- | --- | --- |
 | Mobile (DevTools) | ![screenshot] () | ![screenshot]() | ![screenshot]() | Works as expected |
 | Tablet (DevTools) | ![screenshot] () | ![screenshot]() | ![screenshot]() | Works as expected |
-| Desktop | ![screenshot] () | ![screenshot]() | ![screenshot]() | Works as expected |
+| Desktop | ![screenshot](documentation/chrome-welcome.png) | ![screenshot](documentation/chrome-game.png) | ![screenshot](documentation/chrome-playagain.png) | Works as expected |
 
 ## Lighthouse Audit
 
@@ -78,22 +78,22 @@ PP3 (Python-only):
 - Users must enter a valid letter/word/string when prompted
 - Users must choose from a specific list only
 
-You should include any manual tests performed, and the expected results/outcome.
-Each test case should be specific, objective, and step-wise replicable.
 
-| Page | User Action | Expected Result | Pass/Fail | Comments |
-| --- | --- | --- | --- | --- |
-| Welcome | | | | |
-| | Click on Logo | Redirection to Home page | Pass | |
-| Game | | | | |
-| | Click on Gallery link in navbar | Redirection to Gallery page | Pass | |
-| Play again | | | | |
-| | Click on Gallery link in navbar | Redirection to Gallery page | Pass | |
+| Page | Expectation | Test | Result | Fix | Screenshot |
+| --- | --- | --- | --- | --- | --- |
+| Welcome | | | | | |
+| | Feature is expected to go to choose the correct category when the user has entered a number between 1 and 3 | Tested the feature writing a number | The feature behaved as expected and chose a category within the game | Test concluded and passed | ![screenshot](documentation/feature01.png) |
+| Game | | | | | |
+| | Feature is expected to do add the guessed letter in correct places when user guess right | Tested the feature by typing the one of the right letters | The feature behaved as expected and places the letter in the right place | Test concluded and passed | ![screenshot](documentation/feature02.png) |
+| | Feature is expected to add pieces of the hangman when the player guesses wrong letter | Tested the feature by guessing the wrong letter | The feature behaved as expected and added pieces of the hangman | Test concluded and passed | ![screenshot](documentation/feature03.png) |
+| | Feature is expected to add pieces of the hangman when the player guesses an invalid character such as a number | Tested the feature by guessing a number | The feature behaved as and wrote, invalid guess | Test concluded and passed | ![screenshot](documentation/feature04.png) |
+| | Feature is expected to add pieces of the hangman when the player guesses an invalid character such as a special character | Tested the feature by guessing a "?" | The feature behaved as and wrote, invalid guess | Test concluded and passed | ![screenshot](documentation/feature05.png) |
+| Play again | | | | | |
+| | When the game is over, feature is expected to ask the player if they want to play again | Tested the feature by finishing a round of hangman | The feature behaved as expected, and gave me the option to play again after finishing a round | Test concluded and passed | ![screenshot](documentation/feature06.png) |
+| | Feature is expected to take player to categories again after choosing yes | Tested the feature by enter y | The feature behaved as expected and gave me the option to choose a category after selecting yes | Test concluded and passed | ![screenshot](documentation/feature07.png) |
+| | Feature is expected to take player to say "thanks for playing" again after choosing no | Tested the feature by entering no | The feature behaved as expected and said "thanks for playing" after typing n | Test concluded and passed | ![screenshot](documentation/feature08.png) |
 
 ## Bugs
-
-This section is primarily used for JavaScript and Python applications,
-but feel free to use this section to document any HTML/CSS bugs you might run into.
 
 - Python `'ModuleNotFoundError'` when trying to import module from imported package
 
