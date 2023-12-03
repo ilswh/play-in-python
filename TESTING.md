@@ -35,11 +35,11 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 - [Firefox (Developer Edition)](https://www.mozilla.org/firefox/developer)
 - [Safari](https://support.apple.com/downloads/safari)
 
-| Browser | Welcome | Play | Play again | Notes |
+| Browser | Welcome | Game | Play again | Notes |
 | --- | --- | --- | --- | --- |
-| Chrome | ![screenshot] () | ![screenshot]() | ![screenshot]() | Works as expected |
-| Firefox | ![screenshot] () | ![screenshot]() | ![screenshot]() | Works as expected |
-| Safari | ![screenshot] () | ![screenshot]() | ![screenshot]() | Works as expected |
+| Chrome | ![screenshot](documentation/chrome-welcome.png) | ![screenshot](documentation/chrome-game.png) | ![screenshot](documentation/chrome-playagain.png) | Works as expected |
+| Firefox | ![screenshot](documentation/firefox-welcome.png) | ![screenshot](documentation/firefox-game.png) | ![screenshot](documentation/firefox-playagain.png) | Works as expected |
+| Opera | ![screenshot](documentation/opera-welcome.png) | ![screenshot](documentation/opera-game.png) | ![screenshot](documentation/opera-playagain.png) | Works as expected |
 
 ## Responsiveness
 
