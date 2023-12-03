@@ -1,6 +1,6 @@
 # imports a random word
 import random
-#imported for clear function
+# imported for clear function
 import os
 # accesses words from diffrent categories
 from primary_emotions import primary_emotions_list
@@ -21,13 +21,15 @@ def clear():
 
 
 def get_word(category):
-    """ 
+    """
     Gets a word for the game.
     """
-    if category == "countries":
-        selected_list = country_list
-    if category == "emotions":
-        selected_list = emotions_list
+    if category == "primary_emotions":
+        selected_list = primary_emotions_list
+    if category == "happy_emotions":
+        selected_list = happy_emotions_list
+    if category == "sad_emotions":
+        selected_list = sad_emotions_list
 
     # get a random word from the selected list
     word = random.choice(selected_list)
@@ -44,7 +46,6 @@ def welcome():
     print("Pick a letter or word until you guessed the right word.")
     print("You must do it before the man get's hanged.")
     print("Lets play!")
-
 
 
 def play(word):
@@ -110,14 +111,15 @@ def choose_category():
     global category
     while True:
         print("\nSelect a category:")
-        user_choice = input("1. Primary Emotions\n2. Happy Emotions\n3. Sad Colors\n> ")
+        user_choice = input
+        ("1. Primary Emotions\n2. Happy Emotions\n3. Sad Emotions\n> ")
         clear()
         if user_choice == "1":
-            category = "primary emotions"
+            category = "Primary Emotions"
             print("You've selected Primary Emotions")
             break
         elif user_choice == "2":
-            category = "happy emotions"
+            category = "Happy Emotions"
             print("You've selected Happy Emotions")
             break
         elif user_choice == "3":
@@ -128,7 +130,6 @@ def choose_category():
             print(f"{user_choice} is invalid. Try again.")
 
     return category
-
 
 
 def main():
