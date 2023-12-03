@@ -24,11 +24,11 @@ def get_word(category):
     """
     Gets a word for the game.
     """
-    if category == "primary_emotions":
+    if category == "Primary Emotions":
         selected_list = primary_emotions_list
-    if category == "happy_emotions":
+    if category == "Happy Emotions":
         selected_list = happy_emotions_list
-    if category == "sad_emotions":
+    if category == "Sad Emotions":
         selected_list = sad_emotions_list
 
     # get a random word from the selected list
@@ -111,8 +111,7 @@ def choose_category():
     global category
     while True:
         print("\nSelect a category:")
-        user_choice = input
-        ("1. Primary Emotions\n2. Happy Emotions\n3. Sad Emotions\n> ")
+        user_choice = input("1. Primary Emotions\n2. Happy Emotions\n3. Sad Emotions\n>")
         clear()
         if user_choice == "1":
             category = "Primary Emotions"
