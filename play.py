@@ -111,7 +111,8 @@ def choose_category():
     global category
     while True:
         print("\nSelect a category:")
-        user_choice = input("1. Primary Emotions\n2. Happy Emotions\n3. Sad Emotions\n>")
+        user_choice = input(
+            "1. Primary Emotions\n2. Happy Emotions\n3. Sad Emotions\n>")
         clear()
         if user_choice == "1":
             category = "Primary Emotions"
