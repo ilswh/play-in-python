@@ -21,11 +21,13 @@ DO THIS:
 
 I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com) to validate all of my Python files.
 
-| File | CI URL | Screenshot | Notes |
+| File | CI URL | Screenshot |
 | --- | --- | --- | --- |
-|play.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ilswh/play-in-python/main/play.py) | ![screenshot](documentation/py-validation-play.png) | W291 trailing whitespace |
-| stages.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ilswh/play-in-python/main/checkout/stages.py) | ![screenshot](documentation/py-validation-checkout-urls.png) | W292 no newline at end of file |
-| words.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ilswh/play-in-python/main/checkout/words.py) | ![screenshot](documentation/py-validation-checkout-words.png) | W292 no newline at end of file |
+|play.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ilswh/play-in-python/main/play.py) | ![screenshot](documentation/py-validation-play.png) |
+| stages.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ilswh/play-in-python/main/checkout/stages.py) | ![screenshot](documentation/py-validation-stages.png) |
+| primary_emotions.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ilswh/play-in-python/main/primary_emotions.py) | ![screenshot](documentation/py-validation-primary_emotions.png) |
+| happy_emotions.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ilswh/play-in-python/main/happy_emotions.py) | ![screenshot](documentation/py-validation-happy_emotions.png) |
+| sad_emotions.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ilswh/play-in-python/main/sad_emotions.py) | ![screenshot](documentation/py-validation-sad_emotions.png) |
 
 ## Browser Compatibility
 
