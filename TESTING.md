@@ -107,6 +107,12 @@ PP3 (Python-only):
 
     - To fix this, I deleted whitespace.
 
+- The option too choose a category appears when user choosies N (no) when site ask if user wants to play again.
+
+    ![screenshot](documentation/bug-choosecategory.png)
+
+    - To fix this, I deleted choose_category(172).
+
 ## Unfixed Bugs
 
 - On devices smaller than 768px, the page starts to have `overflow-x` scrolling.
