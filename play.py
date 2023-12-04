@@ -158,7 +158,7 @@ def main():
             word = get_word(category)
             play(word)
         elif again == "N":
-            print("Thanks for playing hangman!")
+            print("Thanks for playing!")
             break
         else:
             print(f"{again} is invalid. Try again.")
