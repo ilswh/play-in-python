@@ -83,20 +83,26 @@ PP3 (Python-only):
 
 - After adding new categories and typing them in global category, the game wouldn't open.
 
-    ![screenshot](documentation/bug03.png)
+    ![screenshot](documentation/bug-gamewontopen.png)
 
-    - To fix this, I removed the underline and added named it by category instead of filename.
+    - To fix this, I removed the underline & capitalized (named it by category instead of by filename).
 
 
 - Line to long.
 
-    ![screenshot](documentation/bug04.png)
+    ![screenshot](documentation/bug-linetoolong.png)
 
     - To fix this, I cut line in to two lines.
 
+- Too many blank lines.
+
+    ![screenshot](documentation/bug-toomanyblanklines.png)
+
+    - To fix this, I deleted one blank line.
+
 - Trailing whitespace.
 
-    ![screenshot](documentation/bug04.png)
+    ![screenshot](documentation/bug-trailingwhitespace.png)
 
     - To fix this, I deleted whitespace.
 
