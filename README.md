@@ -3,8 +3,8 @@
 Play in Python presents the option to play hangman with a theme. 
 The theme is emotions.
 My hope is that it will be a tool to explore and become more aware of emotions of others and self.
-My target audience is mainly human beings on the autism spectrum.
-It will be useful for these humans because it emotional understanding is usually not a granted knowledge for us. 
+My target audience is mainly kids on the autism spectrum.
+It will be useful for these humans because it emotional understanding is usually not a granted knowledge for us. And during frustration they can play this game and let go a bit of the not so nice frustration and perhaps gain some understanding of what's happening inside them.
 
 https://ui.dev/amiresponsive?url=https://play-in-python-5451a263c67c.herokuapp.com
 
@@ -33,25 +33,34 @@ For some/all of your features, you may choose to reference the specific project 
 
     - Firstly when entering the game is a short welcome text, followed by the basic rules of the game.
 
-![screenshot](documentation/feature01.png)
+![screenshot](documentation/feature-welcome.png)
 
 - **Game**
 
     - When entering the game the option to choose a letter or word is presented. With this you can see the start of the pictured hangman.
 
-![screenshot](documentation/feature02.png)
+![screenshot](documentation/feature-game.png)
 
 - **Play again**
 
     - After winning or loosing, the option to play again is presented.
 
-![screenshot](documentation/feature03.png)
+![screenshot](documentation/feature-playagain.png)
 
 
 ### Future Features
 
-- Title for future feature #1
-    - Any additional notes about this feature.
+- More categories
+    - I would add this feature to be able to explore emotions more.
+
+- Explanation of the feeling
+    - I would add this feature to make give the user a deeper unstanding but also a reward at the end of the game.
+
+- Expanded art gallery
+    - Instead of using the traditional hangman-art, I would use smiley-art that portrays the feeling that the user tries to guess in order to practice and gain understanding the emoji-language and also facial expressions.
+
+- Colored art
+    - To make the user wanna stay a bit longer.
 
 ## Tools & Technologies Used
 
@@ -198,19 +207,20 @@ Use this space to discuss any differences between the local version you've devel
 
 ## Credits
 
-In this section you need to reference where you got your content, media, and extra help from.
-It is common practice to use code from other repositories and tutorials,
-however, it is important to be very specific about these sources to avoid plagiarism.
+The youtube video by KITE was of great help for me to be able to get started and the markdown builder a huge timesaver and creates a bigger understand of how to create README and TESTING files.
 
 ### Content
 
 | Source | Location | Notes |
 | --- | --- | --- |
+| [YouTube](https://www.youtube.com/watch?v=m4nEnsavl6w) | entire site | tutorial to create hangman |
 | [Markdown Builder](https://tim.2bn.dev/markdown-builder) | README and TESTING | tool to help generate the Markdown files |
 | [W3Schools](https://www.w3schools.com/howto/howto_js_topnav_responsive.asp) | entire site | Python |
-| [YouTube](https://www.youtube.com/watch?v=u51Zjlnui4Y) | PP3 terminal | tutorial for adding color to the Python terminal |
 | [strftime](https://strftime.org) | CRUD functionality | helpful tool to format date/time from string |
 | [WhiteNoise](http://whitenoise.evans.io) | entire site | hosting static files on Heroku temporarily |
+| [GeeksForGeeks](https://www.geeksforgeeks.org/clear-screen-python/) | clear screen | how to clear screen |
+| [StackOverflow](https://stackoverflow.com/questions/2084508/clear-terminal-in-python) | clear screen | how to clear screen |
+
 
 
 ### Acknowledgements
