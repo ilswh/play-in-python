@@ -206,7 +206,7 @@ Use this space to discuss any differences between the local version you've devel
 
 ## Credits
 
-The youtube video by KITE was of great help for me to be able to get started and the markdown builder a huge timesaver and creates a bigger understand of how to create README and TESTING files.
+The youtube video by Kite was of great help for me to be able to get started and the markdown builder a huge timesaver and creates a bigger understand of how to create README and TESTING files.
 
 ### Content
 
