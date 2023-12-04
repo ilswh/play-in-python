@@ -44,8 +44,8 @@ I've tested my deployed project on the following devices to check for responsive
 
 | Device | Welcome | Game | Play again | Notes |
 | --- | --- | --- | --- | --- |
-| Mobile (DevTools) | ![screenshot] () | ![screenshot]() | ![screenshot]() | Works as expected |
-| Tablet (DevTools) | ![screenshot] () | ![screenshot]() | ![screenshot]() | Works as expected |
+| Mobile (DevTools) | ![screenshot]() | ![screenshot]() | ![screenshot]() | Works as expected |
+| Tablet (DevTools) | ![screenshot](documentation/ipad-welcome.png) | ![screenshot](documentation/ipad-game.png) | ![screenshot](documentation/ipad-playagain.png) | Works as expected |
 | Desktop | ![screenshot](documentation/chrome-welcome.png) | ![screenshot](documentation/chrome-game.png) | ![screenshot](documentation/chrome-playagain.png) | Works as expected |
 
 ## Lighthouse Audit
