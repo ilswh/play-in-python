@@ -109,12 +109,11 @@ PP3 (Python-only):
 
 ## Unfixed Bugs
 
-- On devices smaller than 375px, the page starts to have `overflow-x` scrolling.
+- On devices smaller than 768px, the page starts to have `overflow-x` scrolling.
 
     ![screenshot](documentation/unfixed-bug01.png)
 
     - Attempted fix: I tried to add additional media queries to handle this, but things started becoming too small to read.
-
 
 
 There are no remaining bugs that I am aware of.
