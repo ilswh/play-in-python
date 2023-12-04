@@ -106,7 +106,6 @@ The primary functions used on this application are:
 I've used the following Python packages and/or external imported packages.
 
 - `os`: used for adding a `clear()` function
-- `colorama`: used for including color in the terminal
 - `random`: used to get a random choice from a list
 
 ## Testing
@@ -220,8 +219,6 @@ The youtube video by KITE was of great help for me to be able to get started and
 | [WhiteNoise](http://whitenoise.evans.io) | entire site | hosting static files on Heroku temporarily |
 | [GeeksForGeeks](https://www.geeksforgeeks.org/clear-screen-python/) | clear screen | how to clear screen |
 | [StackOverflow](https://stackoverflow.com/questions/2084508/clear-terminal-in-python) | clear screen | how to clear screen |
-
-
 
 ### Acknowledgements
 
