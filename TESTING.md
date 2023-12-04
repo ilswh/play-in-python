@@ -50,9 +50,9 @@ I've tested my deployed project on the following devices to check for responsive
 
 I've tested my deployed project using the Lighthouse Audit tool to check for any major issues.
 
-| Mobile | Desktop | Notes |
-| --- | --- | --- |
-| ![screenshot] () | ![screenshot]() | ![screenshot]() | Works as expected |
+| Mobile | Desktop |
+| --- | --- |
+| ![screenshot](documentation/lighthouse-mobile.png) | ![screenshot](documentation/lighthouse-desktop.png) |
 
 ## Defensive Programming
 
