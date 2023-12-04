@@ -77,8 +77,8 @@ PP3 (Python-only):
 | | Feature is expected to say "you already guessed .." when a character is guessed more than once | Tested the feature by guessing g twice | The feature behaved as expected and wrote, "you already guessed the letter .." | Test concluded and passed | ![screenshot](documentation/dp-02-alreadyguessed.png) |
 | Play again | | | | | |
 | | When the game is over, feature is expected to ask the player if they want to play again | Tested the feature by finishing a round of hangman | The feature behaved as expected, and gave me the option to play again after finishing a round | Test concluded and passed | ![screenshot](documentation/dp-03-playagain.png) |
-| | Feature is expected to take player to categories again after choosing yes | Tested the feature by enter y | The feature behaved as expected and gave me the option to choose a category after selecting yes | Test concluded and passed | ![screenshot](documentation/dp-03-y.png)![screenshot](documentation/dp-03-selectnewcategory.png) |
-| | Feature is expected to take player to say "thanks for playing" again after choosing no | Tested the feature by entering no | The feature behaved as expected and said "thanks for playing" after typing n | Test concluded and passed | ![screenshot](documentation/dp-n.png) ![screenshot](documentation/dp-thanksforplaying.png) |
+| | Feature is expected to take player to categories again after choosing yes | Tested the feature by entering y | The feature behaved as expected and gave me the option to choose a category after selecting yes | Test concluded and passed | ![screenshot](documentation/dp-03-y.png)![screenshot](documentation/dp-03-selectnewcategory.png) |
+| | Feature is expected to take player to say "thanks for playing" again after choosing no | Tested the feature by entering n | The feature behaved as expected and said "thanks for playing" after typing n | Test concluded and passed | ![screenshot](documentation/dp-03-n.png) ![screenshot](documentation/dp-03-thanksforplaying.png) |
 
 ## Bugs
 
