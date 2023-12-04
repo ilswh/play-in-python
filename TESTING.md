@@ -38,13 +38,11 @@ I've tested my deployed project on following browsers to check for compatibility
 
 I've tested my deployed project on the following devices to check for responsiveness issues.
 
-- Mobile
 - Tablet
 - Desktop
 
 | Device | Welcome | Game | Play again | Notes |
 | --- | --- | --- | --- | --- |
-| Mobile (DevTools) | ![screenshot]() | ![screenshot]() | ![screenshot]() | Works as expected |
 | Tablet (DevTools) | ![screenshot](documentation/ipad-welcome.png) | ![screenshot](documentation/ipad-game.png) | ![screenshot](documentation/ipad-playagain.png) | Works as expected |
 | Desktop | ![screenshot](documentation/chrome-welcome.png) | ![screenshot](documentation/chrome-game.png) | ![screenshot](documentation/chrome-playagain.png) | Works as expected |
 
@@ -52,18 +50,15 @@ I've tested my deployed project on the following devices to check for responsive
 
 I've tested my deployed project using the Lighthouse Audit tool to check for any major issues.
 
-| Page | Mobile | Desktop | Notes |
-| --- | --- | --- | --- |
-| Welcome | ![screenshot] () | ![screenshot]() | ![screenshot]() | Works as expected |
-| Play | ![screenshot] () | ![screenshot]() | ![screenshot]() | Works as expected |
-| Play again | ![screenshot] () | ![screenshot]() | ![screenshot]() | Works as expected |
+| Mobile | Desktop | Notes |
+| --- | --- | --- |
+| ![screenshot] () | ![screenshot]() | ![screenshot]() | Works as expected |
 
 ## Defensive Programming
 
 PP3 (Python-only):
 - Users must enter a valid letter/word/string when prompted
 - Users must choose from a specific list only
-
 
 | Page | Expectation | Test | Result | Fix | Screenshot |
 | --- | --- | --- | --- | --- | --- |
@@ -114,12 +109,5 @@ PP3 (Python-only):
     - To fix this, I deleted choose_category(172).
 
 ## Unfixed Bugs
-
-- On devices smaller than 768px, the page starts to have `overflow-x` scrolling.
-
-    ![screenshot](documentation/unfixed-bug01.png)
-
-    - Attempted fix: I tried to add additional media queries to handle this, but things started becoming too small to read.
-
 
 There are no remaining bugs that I am aware of.
